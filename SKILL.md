@@ -1,6 +1,6 @@
 ---
 name: "resume-tailor"
-description: "Use when given a resume and a target position (posting, link, or just a company and role) to score the match, find missing keywords and red flags, and rewrite the resume as a tailored one-page .docx."
+description: "Use when given a resume and a target position (posting, link, or just a company and role) to score the match, find missing keywords and red flags, and rewrite the resume as a boldly framed, tailored one-page .docx."
 ---
 
 # Resume Tailor
@@ -12,12 +12,21 @@ Take one resume and one target position, run four passes in order, and finish wi
 1. **The resume.** Read the actual file (PDF, .docx, or pasted text) before saying anything about it. Use the name on the resume; it may belong to someone other than the user.
 2. **The position.** Use the job description if the user gave one. If they gave only a company, program, or link, find the posting: search the web, then fetch the employer's own careers or program page and pull eligibility, qualifications, skills sought, placements or duties, dates, and deadlines. If nothing usable turns up, ask the user to paste the description. Say which source the analysis was scored against.
 
-## Ground rule: nothing invented
+## Ground rule: frame boldly, never fabricate
 
-A recruiter can ask about any line, so every line must be true.
+Every line must survive a recruiter's follow-up question, so claim the strongest version of what is true, and nothing that is not.
 
-- Use only facts from the original resume or facts the user confirms.
-- Never invent numbers, duties, tools, or interests. Where a metric is needed and unknown, write a bracketed placeholder such as `[N]` and highlight it yellow in the file.
+**Be aggressive about framing real experience:**
+- Give every duty the strongest accurate verb: "ran," "owned," "led," "built," "cut," "grew" over "helped with" or "responsible for."
+- Quantify generously. Turn real activity into honest numbers and ranges ("~50 customers a day," "10+ events," "a $2K budget"). Round up reasonable estimates the person confirms; use "~", "+", or ranges where the exact figure is unknown.
+- Claim team results the person genuinely contributed to, with wording that shows their part ("on a 4-person team that grew sign-ups 30%").
+- Translate everyday work into the posting's language (lifeguarding is managing safety risk; checking orders against a list is reconciling; tutoring is training and onboarding).
+- Promote side projects, class projects, clubs, and self-taught skills to full entries when they show what the posting wants.
+- Lead with scope: people served, money handled, hours a week, size of the team or audience.
+
+**Hard lines (these get offers pulled):**
+- Never invent employers, titles, dates, degrees, GPAs, certifications, tools, or results that did not happen.
+- Where a metric is needed and unknown, ask the person for a real estimate; if they do not give one, write a bracketed placeholder such as `[N]` and highlight it yellow in the file.
 - Place a keyword only where the underlying work supports it. If no job supports it, put it in the skills line (only if the person has the skill) or recommend the cover letter. Say plainly which keywords were left out and why.
 - Some red flags cannot be worded away (class year below the requirement, missing degree, short tenure). Say so, and suggest the real fix, such as emailing the employer to confirm eligibility.
 
@@ -38,7 +47,8 @@ Use the Google XYZ formula: accomplished X, as measured by Y, by doing Z.
 - Lead each bullet with the result or the number.
 - Work in the missing keywords where they are true (for example, lifeguarding is managing safety risk; checking orders against a list is reconciling).
 - Remove or repair each red flag from Pass 1. Label a family business as one. Replace impossible dates with a placeholder for the real date.
-- Cut filler adverbs and unsupported claims such as "significantly improved."
+- Push every bullet to its strongest true version: bigger verb, a number or range, the scope, and the outcome.
+- Cut filler adverbs and vague claims such as "significantly improved"; replace them with a concrete, confirmed figure.
 
 ## Pass 3: Rebuild the whole resume
 
@@ -57,6 +67,6 @@ Read the rebuilt resume twice more.
 
 ## Deliverable
 
-- Build the final resume as a downloadable .docx (load the docx skill first). Render it to PDF, confirm it is one page, and look at the render before sending.
+- Build the final resume as a downloadable .docx. Load the docx skill first. Render it to PDF (for example `libreoffice --headless --convert-to pdf`), confirm it is one page, and look at the render before sending.
 - In the reply, give: the score table, the five keywords, the three red flags, the skipped-sections table, a short list of what changed, and a list of every highlighted placeholder the user must fill in before submitting.
 - End with what the resume still cannot fix, stated plainly.
